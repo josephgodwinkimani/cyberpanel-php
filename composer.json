@@ -1,0 +1,40 @@
+{
+    "name": "gkimani/skeleton",
+    "description": "package",
+    "type": "library",
+    "keywords": [
+        "package"
+    ],
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "check-style": "phpcs -p --standard=PSR2 src/",
+        "fix-style": "phpcbf -p --standard=PSR2 src/"
+    },
+    "require": {
+        "php": "^8.3"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.11",
+        "phpunit/phpunit": "^11.2",
+        "squizlabs/php_codesniffer": "^3.10"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Gkimani\\Skeleton\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Gkimani\\Skeleton\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Joseph Godwin Kimani",
+            "email": "josephgodwinke@gmail.com",
+            "role": "Owner"
+        }
+    ],
+    "minimum-stability": "stable"
+}

@@ -1,0 +1,7 @@
+services:
+  myservice:
+    type: php:8.3
+    via: nginx
+    webroot: .
+    xdebug: false
+    composer_version: 2-latest
