@@ -2,12 +2,15 @@
 
 <h1 align="center">📦 Unofficial SDK for PHP with Type hinting</h1>
 
-[![Unit Tests](https://github.com/josephgodwinkimani/cyberpanel-php/actions/workflows/tests.yml/badge.svg)](https://github.com/josephgodwinkimani/cyberpanel-php/actions/workflows/tests.yml)
-[![Static Analysis](https://github.com/josephgodwinkimani/cyberpanel-php/actions/workflows/static-analysis.yml/badge.svg)](https://github.com/josephgodwinkimani/cyberpanel-php/actions/workflows/static-analysis.yml)
+[![PHP Version Require](http://poser.pugx.org/gkimani/cyberpanel/require/php)](https://packagist.org/packages/gkimani/cyberpanel)
+[![Version](http://poser.pugx.org/gkimani/cyberpanel/version)](https://packagist.org/packages/gkimani/cyberpanel)
+[![Total Downloads](http://poser.pugx.org/gkimani/cyberpanel/downloads)](https://packagist.org/packages/gkimani/cyberpanel)
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/josephgodwinkimani/cyberpanel-php)
 
-![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/josephgodwinkimani/cyberpanel-php?style=for-the-badge)
-![GitHub issues](https://img.shields.io/github/issues-raw/josephgodwinkimani/cyberpanel-php?style=for-the-badge)
-[![GitHub license](https://img.shields.io/github/license/josephgodwinkimani/cyberpanel-php?style=for-the-badge)](https://github.com/josephgodwinkimani/cyberpanel-php/blob/master/LICENSE)
+[![Unit Tests](https://github.com/josephgodwinkimani/cyberpanel-php/actions/workflows/tests.yml/badge.svg)](https://github.com/josephgodwinkimani/cyberpanel-php/actions/workflows/tests.yml)
+[![Static Analysis by Psalm](https://github.com/josephgodwinkimani/cyberpanel-php/actions/workflows/psalm.yml/badge.svg)](https://github.com/josephgodwinkimani/cyberpanel-php/actions/workflows/psalm.yml)
+[![Static Analysis by PHPStan](https://github.com/josephgodwinkimani/cyberpanel-php/actions/workflows/phpstan.yml/badge.svg)](https://github.com/josephgodwinkimani/cyberpanel-php/actions/workflows/phpstan.yml)
+
 
 ## Introduction
 
