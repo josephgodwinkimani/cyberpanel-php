@@ -7,6 +7,7 @@
 [![Total Downloads](http://poser.pugx.org/gkimani/cyberpanel/downloads)](https://packagist.org/packages/gkimani/cyberpanel)
 ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/josephgodwinkimani/cyberpanel-php)
 
+[![Coding Standards](https://github.com/josephgodwinkimani/cyberpanel-php/actions/workflows/styles.yml/badge.svg)](https://github.com/josephgodwinkimani/cyberpanel-php/actions/workflows/styles.yml)
 [![Unit Tests](https://github.com/josephgodwinkimani/cyberpanel-php/actions/workflows/tests.yml/badge.svg)](https://github.com/josephgodwinkimani/cyberpanel-php/actions/workflows/tests.yml)
 [![Static Analysis by Psalm](https://github.com/josephgodwinkimani/cyberpanel-php/actions/workflows/psalm.yml/badge.svg)](https://github.com/josephgodwinkimani/cyberpanel-php/actions/workflows/psalm.yml)
 [![Static Analysis by PHPStan](https://github.com/josephgodwinkimani/cyberpanel-php/actions/workflows/phpstan.yml/badge.svg)](https://github.com/josephgodwinkimani/cyberpanel-php/actions/workflows/phpstan.yml)
