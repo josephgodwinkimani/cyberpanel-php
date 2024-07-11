@@ -1,32 +1,39 @@
 {
-    "name": "gkimani/skeleton",
-    "description": "package",
+    "name": "gkimani/cyberpanel",
+    "description": "Unofficial PHP SDK for CyberPanel",
     "type": "library",
     "keywords": [
-        "package"
+        "cyberpanel",
+        "hosting",
+        "api"
     ],
     "scripts": {
-        "test": "vendor/bin/phpunit",
+        "test": "vendor/bin/phpunit --verbose",
         "check-style": "phpcs -p --standard=PSR2 src/",
-        "fix-style": "phpcbf -p --standard=PSR2 src/"
+        "fix-style": "phpcbf -p --standard=PSR2 src/",
+        "psalm": "vendor/bin/psalm",
+        "phpstan": "vendor/bin/phpstan analyse"
     },
     "require": {
-        "php": "^8.3"
+        "php": "^7.4 || ^8.0 || ^8.1 || ^8.2 || ^8.3",
+        "guzzlehttp/guzzle": "^7.8"
     },
     "require-dev": {
         "phpstan/phpstan": "^1.11",
-        "phpunit/phpunit": "^11.2",
-        "squizlabs/php_codesniffer": "^3.10"
+        "phpunit/phpunit": "^8.5.14|^9.4",
+        "squizlabs/php_codesniffer": "^3.10",
+        "vimeo/psalm": "^4.17",
+        "psalm/plugin-phpunit": "^0.18.4"
     },
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Gkimani\\Skeleton\\": "src/"
+            "Gkimani\\CyberPanel\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Gkimani\\Skeleton\\Tests\\": "tests/"
+            "Gkimani\\CyberPanel\\Tests\\": "tests/"
         }
     },
     "authors": [

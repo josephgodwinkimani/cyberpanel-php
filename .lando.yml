@@ -1,7 +1,10 @@
+name: cyberpanel-php
 services:
-  myservice:
+  phpplayground:
     type: php:8.3
     via: nginx
     webroot: .
     xdebug: false
     composer_version: 2-latest
+    build:
+      - composer install

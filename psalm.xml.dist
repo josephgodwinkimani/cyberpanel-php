@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<psalm
+    errorLevel="4"
+    resolveFromConfigFile="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://getpsalm.org/schema/config"
+    xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
+>
+    <projectFiles>
+        <directory name="src" />
+        <directory name="tests" />
+        <ignoreFiles>
+            <directory name="vendor" />
+        </ignoreFiles>
+    </projectFiles>
+
+    <issueHandlers>
+        <LessSpecificReturnType errorLevel="info" />
+        <MoreSpecificReturnType errorLevel="info" />
+        <MissingReturnType errorLevel="info" />
+        <MissingPropertyType errorLevel="info" />
+        <InvalidDocblock errorLevel="info" />
+        <MissingDocblock errorLevel="info" />
+        <MissingClosureReturnType errorLevel="info" />
+        <MissingParamType errorLevel="info" />
+        <UndefinedClass>
+            <errorLevel type="suppress">
+                <referencedClass>GuzzleHttp\Client</referencedClass>
+                <referencedClass>GuzzleHttp\Handler\MockHandler</referencedClass>
+                <referencedClass>GuzzleHttp\HandlerStack</referencedClass>
+                <referencedClass>GuzzleHttp\Psr7\Response</referencedClass>
+            </errorLevel>
+        </UndefinedClass>
+    </issueHandlers>
+
+    <plugins>
+        <pluginClass class="Psalm\PhpUnitPlugin\Plugin" />
+    </plugins>
+</psalm>

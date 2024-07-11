@@ -1,5 +1,22 @@
-/vendor
+# Vendor directory
+vendor/
+
+# Composer lock file
 composer.lock
-/phpunit.xml
-.phpunit.result.cache
-/.phpunit.cache
+
+# Testing and static analysis reports
+phpunit.xml.dist
+phpunit.xml
+coverage/
+psalm/
+phpstan/
+
+# Caching files
+*.cache
+
+# Build artifacts (if applicable)
+build/
+
+# Miscellaneous temporary files
+*.tmp
+*.log

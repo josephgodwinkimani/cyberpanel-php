@@ -1,0 +1,47 @@
+name: Static Analysis by PHPStan
+
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+    - "*"
+  schedule:
+  - cron: '0 0 * * *'
+
+jobs:
+  php-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      COMPOSER_NO_INTERACTION: 1
+
+    strategy:
+      matrix:
+        php: [8.3]
+        dependency-version: [prefer-stable]
+
+    name: P${{ matrix.php }} - ${{ matrix.dependency-version }}
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: 8.3
+        extensions: swoole, relay
+        tools: composer:v2
+        coverage: none
+
+    - name: Install dependencies
+      uses: nick-fields/retry@v3
+      with:
+        timeout_minutes: 5
+        max_attempts: 5
+        command: composer update --prefer-stable --prefer-dist --no-interaction --no-progress
+
+    - name: Execute type checking
+      run: vendor/bin/phpstan
