@@ -1,4 +1,4 @@
-name: Unit Tests
+name: Coding Standards
 
 on:
   push:
@@ -38,6 +38,7 @@ jobs:
     - name: Install dependencies
       run: |
         composer update --${{ matrix.dependency-version }} --prefer-dist --no-progress
-
-    - name: Execute Unit Tests
-      run: composer test
+      
+    - name: Check Code Style
+      run: composer check-style
+      if: ${{ matrix.dependency-version == 'prefer-stable' }}
